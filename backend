@@ -1,0 +1,8 @@
+terraform {
+  backend "s3" {
+    bucket = "lifeicaleb"
+    key = "terraform.tfstate"
+    dynamodb_table = "budget"
+    region = "us-east-1"
+  }
+}
